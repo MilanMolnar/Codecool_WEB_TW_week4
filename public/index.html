@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script  src="https://cdn.socket.io/socket.io-1.4.5.js" > </script>
+    <title>SketchCodecool</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style> body {padding: 0; margin: 0;}</style>
+  </head>
+  <body>
+    <p id="players-online">Views: </p>
+    <div id="guessword"></div>
+    <div class="timerdiv">
+      <span id="timer"></span>
+      <button class="getWord" id="getWord">Start</button>
+      <button id="clear-board"><img class="button-image" src="timer.png" /></button>
+    </div>
+    <div class="colors">
+      <button id="green" style="position:absolute; margin-top: 15px;background-color:green;margin-left: 60px; width: 30px; border-radius: 15px; height: 30px; float: right;"></button>
+      <button id="red" style="position:absolute;margin-top: 15px;margin-left: 110px; background-color:red ;width: 30px; border-radius: 15px; height: 30px;float: right "></button>
+      <button id="blue" style="position:absolute; margin-top: 15px;margin-left: 160px; background-color:blue;width: 30px; border-radius: 15px; height: 30px;float: right "></button>
+      <button id="yellow" style="position:absolute; margin-top: 15px;margin-left: 210px; background-color:yellow;width: 30px; border-radius: 15px; height: 30px;float: right"></button>
+      <button id="purple" style="position:absolute; margin-top: 15px;margin-left: 260px; background-color:purple;width: 30px; border-radius: 15px; height: 30px;float: right"></button>
+      <button id="black" style="position:absolute; margin-top: 15px;margin-left: 310px; background-color:black;width: 30px; border-radius: 15px; height: 30px;float: right"></button>
+    </div>  
+    
+    <script src="sketch.js" type="text/javascript"></script>
+  </body>
+</html>
